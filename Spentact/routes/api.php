@@ -26,10 +26,10 @@ Route::post('/user', function (){
     return response()->json("Posted");
 });
 
-Route::put('/user/{$id}', function($id){
+Route::put('/user/{id}', function($id){
     return response("Put". $id, 200);
 });
 
-Route::delete('/user/{$id}', function($id){
+Route::delete('/user/{id}', function($id){
     return response("Delete". $id, 200);
 });

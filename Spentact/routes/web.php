@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BaseController;
+use App\Http\Controllers\ResourceController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/page1', function () {
-    return view('page1');
-});
+Route::get('/', [BaseController::class, 'welcomePage']);
+Route::get('/resource', [ResourceController::class, 'index']);
+Route::get('/r2', [ResourceController::class, 'create']);

@@ -17,5 +17,5 @@ use App\Http\Controllers\ResourceController;
 */
 
 Route::get('/', [BaseController::class, 'welcomePage']);
-Route::get('/resource', [ResourceController::class, 'index']);
-Route::get('/r2', [ResourceController::class, 'create']);
+// Route::get('/resource', [ResourceController::class, 'index']);
+// Route::get('/r2', [ResourceController::class, 'create']);
